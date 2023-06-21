@@ -2,10 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Home</title>
-    <p>I Love Movies</p>
-    <a href="bestMovie">Find the best movie!</a>
-    <a href="voteForTheBestMovieForm">Vote Best Movie!</a>
+    <a href="/"> Home </a>
+    <title>Best Movie</title>
+    <p>Best Movie:</p>
+    <p th:text="'The Best Movie Is: ' + ${BestMovie}"></p>
+
 </head>
 <body>
 
