@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BestMovieService {
-    private Movie movie;
+    private final Movie movie;
 
     public BestMovieService(@Qualifier("titanicMovie") Movie movie) {
         this.movie = movie;

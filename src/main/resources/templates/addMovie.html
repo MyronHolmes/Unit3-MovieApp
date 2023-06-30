@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add movie</title>
+
+    <a href="/">Home</a>
+
+    <form action="addMovie" method="POST">
+        <p>Movie Title: <input type="text" name="movieTitle"/> </p>
+        <p>Movie Maturity Rating: <input type="text" name="maturityRating"/> </p>
+        <p>Movie Genre: <input type="text" name="genre"/> </p>
+        <p> <input type="submit" value="Submit" /></p>
+        <p th:text="${BestMovieVote}"></p>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
